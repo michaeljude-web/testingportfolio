@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Michael Jude Garde — Software Developer specializing in Python, Linux, and full-stack web development." />
+<title>Michael Jude Garde</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+<link href="style.css" rel="stylesheet" />
+</head>
+<body>
+
+<div class="page-wrap">
+
+  <header class="cover-photo">
+    <img src="images/profile/cover.png" alt="" onerror="this.style.display='none';" />
+  </header>
+
+  <section class="profile-card" aria-label="Profile identity">
+
+    <div class="profile-card-body">
+      <div class="profile-header-row">
+        <div class="avatar-circle">
+          <img src="images/profile/photo.png" alt="Michael Jude Garde" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+          <div class="avatar-fallback-text" style="display:none;" aria-hidden="true">MJ</div>
+        </div>
+        <div class="name-block">
+          <h1>Michael Jude Garde</h1>
+          <p class="job-title-text">Software Developer</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-section">
+      <p>
+        I’m a software developer and BSIT student working independently on applications that address practical needs and real-world use cases. I focus on building systems that are well-structured, dependable, and user-centered, while consistently improving my skills through continuous development and project-based learning.
+      </p>
+      <ul class="info-list">
+        <li><i class="fas fa-location-dot"></i> Malabon City, Philippines</li>
+        <li><i class="fas fa-graduation-cap"></i> Bachelor of Science in Information Technology</li>
+      </ul>
+    </div>
+
+    <div class="contact-links">
+      <a href="https://github.com/michaeljude-web" class="link-button" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+      <a href="https://linkedin.com/in/michaeljudegarde" class="link-button" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+      <a href="mailto:michaeljude@email.com" class="link-button">
+        <i class="fas fa-envelope"></i> Email
+      </a>
+      <a href="cv.pdf" class="link-button" download>
+        <i class="fas fa-download"></i> Resume
+      </a>
+    </div>
+
+    <nav class="section-nav" aria-label="Profile sections">
+      <button class="section-nav-btn current" data-target="panel-projects" type="button">
+        <i class="fas fa-house"></i> Home
+      </button>
+      <button class="section-nav-btn" data-target="panel-gallery" type="button">
+        <i class="fas fa-images"></i> Gallery
+      </button>
+    </nav>
+
+  </section>
+
+  <main>
+
+    <section id="panel-projects" class="content-block current" aria-label="Projects">
+      <div class="card-box">
+        <h2 class="card-box-title">Projects</h2>
+        <ul class="project-list">
+
+          <li class="project-entry">
+            <div class="project-thumb">
+              <div class="project-thumb-placeholder"><i class="fas fa-bowl-food"></i></div>
+              <img src="projects/snack-in-save.png" alt="Snack in Save 9Nueve screenshot" onerror="this.style.display='none';" />
+            </div>
+            <article class="project-info">
+              <h3>Snack in Save 9Nueve</h3>
+              <p>
+                Mobile food ordering and smart queue system. Includes a staff desktop app in Python/Tkinter,
+                PHP/MySQL backend, a printable browser receipt page, and a cart system with AES-256-CBC
+                encryption throughout.
+              </p>
+              <ul class="stack-list">
+                <li class="stack-chip">PHP</li>
+                <li class="stack-chip">MySQL</li>
+                <li class="stack-chip">Python</li>
+                <li class="stack-chip">Tkinter</li>
+                <li class="stack-chip">AES-256</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/michaeljude-web/snack-in-save" class="btn btn-outline-dark" target="_blank" rel="noopener">
+                  <i class="fab fa-github me-1"></i>GitHub
+                </a>
+                <a href="#" class="btn btn-dark" target="_blank" rel="noopener">
+                  <i class="fas fa-arrow-up-right-from-square me-1"></i>Live
+                </a>
+              </div>
+            </article>
+          </li>
+
+          <li class="project-entry">
+            <div class="project-thumb">
+              <div class="project-thumb-placeholder"><i class="fas fa-leaf"></i></div>
+              <img src="photo.png" alt="Plant Nursery App screenshot" onerror="this.style.display='none';" />
+            </div>
+            <article class="project-info">
+              <h3>Plant Nursery App</h3>
+              <p>
+                PHP web app with AES-256-CBC encryption standardized across all modules, a migration
+                script for re-encrypting legacy records, and a standalone browser-based AES tool
+                built with the Web Crypto API.
+              </p>
+              <ul class="stack-list">
+                <li class="stack-chip">PHP</li>
+                <li class="stack-chip">MySQL</li>
+                <li class="stack-chip">JavaScript</li>
+                <li class="stack-chip">Web Crypto API</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/michaeljude-web/plant-nursery" class="btn btn-outline-dark" target="_blank" rel="noopener">
+                  <i class="fab fa-github me-1"></i>GitHub
+                </a>
+                <a href="#" class="btn btn-dark" target="_blank" rel="noopener">
+                  <i class="fas fa-arrow-up-right-from-square me-1"></i>Live
+                </a>
+              </div>
+            </article>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <section id="panel-gallery" class="content-block" aria-label="Gallery">
+      <div class="card-box">
+        <h2 class="card-box-title">Album</h2>
+        <ul class="photo-grid" id="photoGrid">
+
+          <li class="photo-grid-item" tabindex="0" role="button" aria-label="Open image">
+            <div class="photo-grid-item-placeholder"><i class="fas fa-image"></i></div>
+            <img src="images/album/H4G.png" alt="" onerror="this.style.display='none';">
+          </li>
+
+          <li class="photo-grid-item" tabindex="0" role="button" aria-label="Open image">
+            <div class="photo-grid-item-placeholder"><i class="fas fa-image"></i></div>
+            <img src="images/album/H4G2.png" alt="" onerror="this.style.display='none';">
+          </li>
+
+          <li class="photo-grid-item" tabindex="0" role="button" aria-label="Open image">
+            <div class="photo-grid-item-placeholder"><i class="fas fa-image"></i></div>
+            <img src="images/album/webdesign.png" alt="" onerror="this.style.display='none';">
+          </li>
+
+          <li class="photo-grid-item" tabindex="0" role="button" aria-label="Open image">
+            <div class="photo-grid-item-placeholder"><i class="fas fa-image"></i></div>
+            <img src="album/snack-orders.png" alt="" onerror="this.style.display='none';">
+          </li>
+
+          <li class="photo-grid-item" tabindex="0" role="button" aria-label="Open image">
+            <div class="photo-grid-item-placeholder"><i class="fas fa-image"></i></div>
+            <img src="album/snack-receipt.png" alt="" onerror="this.style.display='none';">
+          </li>
+
+          <li class="photo-grid-item" tabindex="0" role="button" aria-label="Open image">
+            <div class="photo-grid-item-placeholder"><i class="fas fa-image"></i></div>
+            <img src="album/contrachoice-forum.png" alt="" onerror="this.style.display='none';">
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+</div>
+
+<footer class="site-footer">
+  <p class="mb-0">&copy; 2026 Michael Jude Garde</p>
+</footer>
+
+<div class="image-viewer" id="imageViewer" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <div class="image-viewer-stage">
+    <span class="image-viewer-count" id="viewerCount"></span>
+    <button type="button" class="image-viewer-close" id="viewerClose" aria-label="Close">
+      <i class="fas fa-xmark"></i>
+    </button>
+    <button type="button" class="image-viewer-arrow back" id="viewerBack" aria-label="Previous image">
+      <i class="fas fa-chevron-left"></i>
+    </button>
+    <img class="image-viewer-img" id="viewerImage" src="" alt="" />
+    <button type="button" class="image-viewer-arrow forward" id="viewerForward" aria-label="Next image">
+      <i class="fas fa-chevron-right"></i>
+    </button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

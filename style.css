@@ -246,6 +246,7 @@ a { color: inherit; text-decoration: none; }
 .project-thumb {
   flex: 0 0 220px;
   width: 220px;
+  height: 220px;
   position: relative;
   background-color: #e9ecef;
 }
@@ -321,6 +322,57 @@ a { color: inherit; text-decoration: none; }
   font-weight: 500;
   padding: 5px 12px;
   border-radius: 6px;
+}
+
+.achievement-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.achievement-entry {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  border: 1px solid #e4e6eb;
+  border-radius: 8px;
+  padding: 14px 16px;
+  background-color: #ffffff;
+}
+
+.achievement-icon {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #f0f2f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.achievement-icon i { font-size: 1.1rem; color: gray; }
+
+.achievement-info h3 {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 2px;
+}
+
+.achievement-org {
+  font-size: 0.8125rem;
+  color: #65676b;
+  margin: 0;
+}
+
+.achievement-year {
+  font-size: 0.775rem;
+  color: #8a8d93;
+  margin: 2px 0 0;
 }
 
 .photo-grid {
@@ -467,7 +519,7 @@ a { color: inherit; text-decoration: none; }
   .card-box { padding: 16px; }
 
   .project-entry { flex-direction: column; }
-  .project-thumb { width: 100%; flex: none; height: 170px; }
+  .project-thumb { width: 100%; flex: none; height: auto; aspect-ratio: 1 / 1; }
 
   .image-viewer-stage { padding: 70px 14px; }
   .image-viewer-arrow { width: 40px; height: 40px; font-size: 1.05rem; }
